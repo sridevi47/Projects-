@@ -1,0 +1,11 @@
+<%= semantic_form_for @parent do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :fname %>
+    <%= f.input :lname %>
+    <%= f.input :gender, :as => "radio" %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
